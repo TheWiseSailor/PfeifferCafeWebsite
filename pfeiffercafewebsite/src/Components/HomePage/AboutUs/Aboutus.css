@@ -7,7 +7,7 @@
 
 body {
   margin: 0;
-  font-family: 'Honey Script', cursive; 
+  font-family: 'Honey Script', cursive !important; 
 }
 
 .AboutUs-background {
@@ -25,6 +25,7 @@ body {
   margin: 0 auto;
   padding: 20px;
   
+  
 }
 
 .AboutUs-Container {
@@ -34,11 +35,12 @@ body {
   align-items: center;
   max-width: 1420px;
   margin: 80px auto;
+  
 }
 
 .AboutUs-leftSide {
   max-width: 300px;
-  font-family: 'Honey Script', cursive;
+  font-family: 'Honey Script', cursive !important;
   text-align: center;
 }
 
@@ -55,7 +57,7 @@ body {
 }
 
 .AboutUs-heading {
-  font-family: 'Nunito', sans-serif;
+
   font-weight: 900;
   font-size: 40px;
   line-height: 64px;
@@ -63,7 +65,7 @@ body {
 }
 
 .AboutUs-subHeading {
-  font-family: 'Nunito', sans-serif;
+
   font-size: 14px;
   line-height: 25px;
 }
