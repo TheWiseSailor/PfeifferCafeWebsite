@@ -4,7 +4,7 @@ import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import { faBars } from '@fortawesome/free-solid-svg-icons';
 import './Header.css';
 import logo from './HeaderImages/logo.png';
-
+import AOSInitializer from "../AOS/AOSInitializer.js";
 const Header = () => {
   const [isMobileMenuOpen, setIsMobileMenuOpen] = useState(false);
   const [scrolling, setScrolling] = useState(false);
@@ -33,33 +33,47 @@ const Header = () => {
   return (
     <header className={`HeaderPrimary ${scrolling ? 'hidden' : ''} ${activeLink.replace('/', '')}`}>
       <div className="container header">
+
         <div className="logo-container">
+        <AOSInitializer />
           <Link to="/">
-            <img src={logo} alt="Pfeiffer Cafe Logo" className="logo" />
+          
+            <img src={logo} alt="Pfeiffer Cafe Logo" className="logo" data-aos="fade-down"
+        data-aos-duration="3000"/>
+        
           </Link>
         </div>
         <nav className={`navbar ${isMobileMenuOpen ? 'open' : ''}`}>
           <ul>
-            <li className='nav-li'>
- 
-            </li>
-            <li className='nav-li'>
+          
+          <AOSInitializer />
+
+            <li className='nav-li'data-aos="fade-up"
+        data-aos-duration="3000">
               <Link
                 to="/bakery"
                 className={activeLink === '/bakery' ? 'active' : ''}
               >
                 Bakery
               </Link>
+              
             </li>
-            <li className='nav-li'>
+            <AOSInitializer />
+            <li className='nav-li'data-aos="fade-down"
+        data-aos-duration="3000">
+          
               <Link
                 to="/gift-shop"
                 className={activeLink === '/gift-shop' ? 'active' : ''}
               >
+                
                 Gift Shop
               </Link>
             </li>
-            <li className='nav-li'>
+            <AOSInitializer />
+            <li className='nav-li'data-aos="fade-up"
+        data-aos-duration="3000">
+             <AOSInitializer />
               <Link
                 to="/contact"
                 className={activeLink === '/contact' ? 'active' : ''}
