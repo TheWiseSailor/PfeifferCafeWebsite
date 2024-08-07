@@ -1,0 +1,139 @@
+.HeaderPrimary {
+  background: #FCD667;
+  padding: 20px 0;
+  transition: background-color 0.3s ease;
+  position: relative;
+  z-index: 1000;
+  font-family: 'Honey Script', cursive;
+  color: #000000;
+  top: 0;
+}
+
+.HeaderPrimary.ice-cream {
+  background-color: #f8d7da; 
+}
+
+.HeaderPrimary.bakery {
+  background-color: #cce5ff; 
+}
+
+.HeaderPrimary.gift-shop {
+  background-color: #d4edda; 
+}
+
+.logo-container {
+  display: flex;
+  align-items: center;
+}
+
+.logo {
+  height: 50px; 
+  width: auto;
+  display: block;
+}
+
+.logo:hover {
+  text-decoration: none;
+}
+
+.header {
+  margin: 0 auto;
+}
+
+.container {
+  width: 90%;
+  margin: 0 auto;
+  display: flex;
+  align-items: center;
+  text-align: center !important;
+}
+
+.navbar {
+  flex: 1;
+  display: flex;
+  justify-content: flex-end;
+}
+
+.navbar ul {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+  display: flex;
+  font-size: 30px;
+  font-weight: bold;
+}
+
+.navbar ul li:last-child {
+  margin-right: 0;
+}
+
+.navbar ul li a {
+  text-decoration: none;
+  color: #000000;
+  transition: color 0.3s ease;
+}
+
+.navbar ul li a.active {
+  color: #000000; 
+}
+
+.navbar ul li a:hover {
+  color: #000000;
+}
+
+.mobile-menu-icon {
+  cursor: pointer;
+  display: none;
+}
+
+.mobile-menu-icon.active .MMI-icon {
+  color: #ff5733; 
+}
+
+.MMI-icon {
+  height: 35px;
+}
+
+.container .navbar.open ul,
+.container .navbar.open {
+  display: flex;
+  min-width: 100px;
+  margin-left: -10px;
+  border-radius: 0 0 10px 10px;
+  background-color: #d4edda
+}
+
+@media (max-width: 768px) {
+  .navbar ul {
+    display: none;
+    flex-direction: column;
+    position: absolute;
+    top: 100%;
+    right: 0;
+    max-width: 100%;
+    overflow-x: hidden;
+    background-color: #ffffff;
+  }
+
+  .navbar ul li a {
+    text-decoration: none;
+    color: rgb(0, 0, 0);
+    transition: color 0.3s ease;
+  }
+
+  .mobile-menu-icon {
+    display: block;
+    cursor: pointer;
+  }
+}
+
+@media (min-width: 769px) {
+  .navbar ul li {
+    margin-left: 20px;
+  }
+
+  .container .navbar.open ul,
+  .container .navbar.open {
+    background: transparent;
+  }
+}

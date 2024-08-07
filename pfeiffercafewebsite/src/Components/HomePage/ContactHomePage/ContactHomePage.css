@@ -1,0 +1,121 @@
+.ContactHomePage-page-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: #f8d7da;
+  height: 100vh;
+  margin-top: -21px;
+  margin-bottom: -45px;
+  padding: 20px;
+  flex-wrap: wrap; 
+}
+
+.info-section {
+  font-family: 'Honey Script', cursive;
+  font-weight: bolder;
+  font-size: 30px;
+  flex: 1;
+  text-align: center;
+  max-width: 300px;
+  margin-right: 120px;
+  background-color: #cce5ff;
+  padding: 20px;
+  border-radius: 30px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+.ContactHomePage-form-container-page {
+  font-family: 'Honey Script', cursive;
+  font-size: 30px;
+  flex: 1;
+  max-width: 470px;
+  padding: 20px;
+  background-color: #cce5ff;
+  border-radius: 30px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0);
+}
+
+.ContactHomePageHeader-container-page {
+  text-align: center;
+  color: #000000;
+}
+
+.form-container {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+
+.form-container input,
+.form-container textarea {
+  padding: 10px;
+  border-radius: 25px;
+  border: 1px solid #ccc;
+  background-color: #d4edda;
+  font-family: 'Honey Script', cursive;
+  color: #000000;
+  font-weight: bolder;
+  font-size: 25px;
+}
+
+.form-container button {
+  padding: 10px;
+  background-color: #d4edda;
+  margin: 0 auto;
+  color: #000000;
+  border: 2px solid #000000;
+  min-width: 200px;
+  border: none;
+  border-radius: 25px;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+  font-family: 'Honey Script', cursive;
+  font-size: 25px;
+  font-weight: bolder;
+}
+
+.form-container button:hover {
+  background-color: #61bd23;
+}
+
+.SuccessMessageBackground {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: #f8d7da;
+  height: 100vh;
+  font-family: 'Honey Script', cursive;
+  font-size: 25px;
+}
+
+.SuccessMessage {
+  text-align: center;
+  padding: 20px;
+  background-color: #4CAF50;
+  color: rgb(0, 0, 0);
+  font-weight: bolder;
+  font-family: 'Honey Script', cursive;
+  border-radius: 5px;
+}
+
+/* Media query for mobile view */
+@media only screen and (max-width: 767px) {
+  .ContactHomePage-page-container {
+    flex-direction: column;
+    align-items: center;
+    height: auto; 
+    margin-top: -150px;
+    margin-bottom: 0;
+  }
+
+  .info-section {
+    margin: 20px 0; 
+    max-width: 100%; 
+  }
+
+  .ContactHomePage-form-container-page {
+    width: 100%;
+    max-width: 100%; 
+    margin: 20px 0; 
+  }
+}
