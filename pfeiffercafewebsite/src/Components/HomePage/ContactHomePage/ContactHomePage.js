@@ -1,7 +1,7 @@
 import React from 'react';
 import './ContactHomePage.css';
 import { useForm, ValidationError } from '@formspree/react';
-
+import AOSInitializer from "../../AOS/AOSInitializer";
 function ContactHomePage() {
   const [state, handleSubmit] = useForm("balls");
 
@@ -11,12 +11,14 @@ function ContactHomePage() {
 
   return (
     <div className="ContactHomePage-page-container">
-      <div className="info-section">
+             <AOSInitializer />
+      <div className="info-section"data-aos="fade-down" data-aos-duration="3000">
         <h2>Get In Touch:</h2>
         <p>Pfeiffer Cafe is passionately committed to delivering delectable and mouth-watering cuisine to the vibrant community of uptown Shelby. We warmly invite you to reach out to us for more detailed information or to share your invaluable suggestions on how we can enhance our services to serve you better.
         </p>
       </div>
-      <div className="ContactHomePage-form-container-page" data-aos="fade-down" data-aos-duration="3000">
+      <AOSInitializer />
+      <div className="ContactHomePage-form-container-page" data-aos="fade-up" data-aos-duration="3000">
         <h2 className="ContactHomePageHeader-container-page">Contact</h2>
         <form onSubmit={handleSubmit} className="form-container">
           <input
