@@ -14,21 +14,22 @@
 
 .hero-content {
   text-align: center;
-  color: black;
+  color: #cce5ff; 
   position: relative;
+
   z-index: 1;
   padding: 20px;
-  background-color: #cce5ffd0; 
+  background-color: #00000093; 
   border-radius: 50px;
 }
 
 .hero-title {
-  font-size: 3rem;
+  font-size: 10rem;
   margin-bottom: 10px;
 }
 
 .hero-description {
-  font-size: 1.5rem;
+  font-size: 2.5rem;
   margin-bottom: 20px;
 }
 
