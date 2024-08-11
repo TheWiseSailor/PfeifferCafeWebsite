@@ -1,0 +1,14 @@
+@import 'leaflet/dist/leaflet.css';
+
+.map-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100%;
+  padding-top: 100px;
+  padding-bottom: 100px;
+}
+
+.map {
+  border: 1px solid #ccc; 
+}
