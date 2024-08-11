@@ -1,17 +1,17 @@
 {
   "files": {
-    "main.css": "/PfeifferCafeWebsite/static/css/main.65ff4e28.css",
-    "main.js": "/PfeifferCafeWebsite/static/js/main.a9c53234.js",
+    "main.css": "/PfeifferCafeWebsite/static/css/main.79d345c2.css",
+    "main.js": "/PfeifferCafeWebsite/static/js/main.7e4c4b59.js",
     "static/js/453.820b6521.chunk.js": "/PfeifferCafeWebsite/static/js/453.820b6521.chunk.js",
     "static/media/LPImage.png": "/PfeifferCafeWebsite/static/media/LPImage.1e8d536fd7ccae17cf2d.png",
     "static/media/logo.png": "/PfeifferCafeWebsite/static/media/logo.14d63bec54d31f481dad.png",
     "index.html": "/PfeifferCafeWebsite/index.html",
-    "main.65ff4e28.css.map": "/PfeifferCafeWebsite/static/css/main.65ff4e28.css.map",
-    "main.a9c53234.js.map": "/PfeifferCafeWebsite/static/js/main.a9c53234.js.map",
+    "main.79d345c2.css.map": "/PfeifferCafeWebsite/static/css/main.79d345c2.css.map",
+    "main.7e4c4b59.js.map": "/PfeifferCafeWebsite/static/js/main.7e4c4b59.js.map",
     "453.820b6521.chunk.js.map": "/PfeifferCafeWebsite/static/js/453.820b6521.chunk.js.map"
   },
   "entrypoints": [
-    "static/css/main.65ff4e28.css",
-    "static/js/main.a9c53234.js"
+    "static/css/main.79d345c2.css",
+    "static/js/main.7e4c4b59.js"
   ]
 }
