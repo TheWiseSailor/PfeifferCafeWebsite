@@ -3,6 +3,7 @@ import { MapContainer, TileLayer, Marker, Popup } from 'react-leaflet';
 import L from 'leaflet';
 import 'leaflet/dist/leaflet.css';
 import './Maps.css';
+import { FaFacebook, FaInstagram } from 'react-icons/fa'; // Import social media icons
 
 delete L.Icon.Default.prototype._getIconUrl;
 
@@ -13,12 +14,23 @@ L.Icon.Default.mergeOptions({
 });
 
 const Maps = () => {
-
   const position = [35.290561, -81.539390];
 
   return (
     <div className="map-container">
-      <MapContainer className="map" center={position} zoom={15} style={{ height: "400px", width: "500px" }}>
+      <div className="address-container">
+        <div className='maptitle'>Our Location!</div>
+        <p>
+          116 E. Warren Street, Shelby, NC | (704) 481-7285 | Monday-Saturday 11 a.m. - 10 p.m. | Closed Sunday
+        </p>
+        <div className="social-media">
+          <a href="https://www.facebook.com/profile.php?id=100063584858225" target="_blank" rel="noopener noreferrer">
+            <FaFacebook size={48} />
+          </a>
+
+        </div>
+      </div>
+      <MapContainer className="map" center={position} zoom={15} >
         <TileLayer
           url="https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png"
           attribution='&copy; <a href="https://www.openstreetmap.org/copyright">OpenStreetMap</a> contributors'
